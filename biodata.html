@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>BIODATA</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css"> 
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href='#' class="logo">IMD318 - INDIVIDUAL PROJECT</a>
+        <ul>
+           <li class="active"><a href="index.html">HOME</a></li>
+           <li class="dropdown">
+               <a href="#about-me">ABOUT ME</a>
+               <div class="dropdown-content">
+                   <a href="biodata.html" target="_blank">BIODATA</a>
+               </div>
+            </li>
+           <li class="dropdown">
+               <a href="#my-journey"> MY JOURNEY</a>
+               <div class="dropdown-content">
+                   <a href="education.html" target="_blank">EDUCATION</a>
+                   <a href="education.html" target="_blank">EXPERIENCE</a>
+               </div>
+           </li>
+           <li class="dropdown">
+               <a href="#relationships" >RELATIONSHIPS</a>
+               <div class="dropdown-content">
+                   <a href="relationships.html" target="_blank">FAMILY</a>
+                   <a href="relationships.html" target="_blank">FRIENDS</a>
+               </div>
+           </li>
+           <li class="dropdown">
+               <a href="#gallery">GALLERY</a>
+               <div class="dropdown-content">
+               <a href="gallery.html" target="_blank">PHOTOS</a>
+               <a href="gallery.html" target="_blank">VIDEOS</a>
+        </ul>
+      </nav>
+
+<section id="biodata" class="biodata-section">
+        <h2 class="biodata-title">BIODATA</h2>
+
+    <div class="biodata-images">
+        <img src="bioimage1.jpg" alt="" onclick="openFullScreen(this);"/>
+        <img src="bioimage2.jpg" alt="" onclick="openFullScreen(this);"/>
+        <img src="bioimage3.jpg" alt="" onclick="openFullScreen(this);"/>
+    </div>
+
+    <div id="fullScreenOverlay" class="overlay" onclick="closeFullScreen();">
+        <span class="close">&times;</span>
+        <img class="full-screen-image" id="fullScreenImage" src="" alt=""/>
+    </div>
+</section>
+
+    <div class="biodata-info">
+
+        <div class="biodata-pair">
+            <div class="biodata-item">
+                <h3>Full Name</h3>
+                <p>Nur Jannatun Anis binti Norhisham</p>
+            </div>
+            <div class="biodata-item">
+                <h3>Nicknames</h3>
+                <p>Anis <sub>(friends, lecturers, peers)</sub></p>
+                <p>Kakcik <sub>(family)</sub></p>
+            </div>
+
+        <div class="biodata-pair">
+            <div class="biodata-item">
+                <h3> Date of Birth</h3>
+                <p>26 November 2004</p>
+            </div>
+            <div class="biodata-item">
+                <h3>Born and Raised</h3>
+                <p>In Perak</p>
+            </div>
+        </div>
+        
+        <div class="biodata-pair">
+            <div class="biodata-item">
+                <h3>Languages Spoken</h3>
+                <p> Malay and English</p>
+            </div>
+            <div class="biodata-item">
+                <h3>Hobbies and Interests</h3>
+                <p>Video editing <sup>(vlogs/personal projects)</sup> Capcut / Adobe Premiere Pro</p>
+                <p>Graphic design <sup>(posters/social media graphics)</sup> Canva / Adobe Photoshop</p>
+            </div>
+        </div>
+        
+        <div class="biodata-pair">
+            <div class="biodata-item">
+                <h3>Personality Type</h3>
+                <p><a href= "https://www.16personalities.com/enfp-personality"
+                target="_blank">ENFP (Campaigner)</a></p>
+                <p> As an ENFP, I thrive on connection and creativity. In relationships, I’m passionate and affectionate, always seeking deep, meaningful connections. I tend to fall in love quickly and enjoy exploring new experiences with my partner. My friends appreciate my enthusiasm and ability to make them feel valued.
+                    In education, I prefer interactive and creative learning environments. I engage best in group projects where I can share ideas and collaborate. However, I sometimes struggle with rigid structures that limit my creativity.
+                    In everyday life, I’m spontaneous and love trying new things. My extroverted nature makes me approachable, and I enjoy meeting new people. I often find creative ways to make daily tasks more enjoyable, turning the mundane into something fun.</p>
+            </div>
+            <div class="biodata-item">
+                <h3>Learning Style</h3>
+                <p><a href= "https://tophat.com/glossary/v/visual-learning/#:~:text=Visual%20learning%20is%20a%20type,in%20order%20to%20learn%20it"
+                target="_blank">Visual Learner</a></p>
+                <p>I identify as a visual learner, which means I grasp information best when it is presented in a visual format. I thrive on diagrams, charts, and images that help me understand complex concepts. When studying or absorbing new material, I often find myself drawing mind maps or using color-coded notes to organize my thoughts.
+                    In group settings, I appreciate presentations that incorporate visuals, as they keep me engaged and make the content more relatable. I tend to remember things better when I can associate them with images or visual cues. </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

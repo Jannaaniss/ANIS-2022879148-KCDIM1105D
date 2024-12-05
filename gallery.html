@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>GALLERY</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href='#' class="logo">IMD318 - INDIVIDUAL PROJECT</a>
+        <ul>
+           <li class="active"><a href="index.html">HOME</a></li>
+           <li class="dropdown">
+               <a href="#about-me">ABOUT ME</a>
+               <div class="dropdown-content">
+                   <a href="biodata.html" target="_blank">BIODATA</a>
+               </div>
+            </li>
+           <li class="dropdown">
+               <a href="#my-journey"> MY JOURNEY</a>
+               <div class="dropdown-content">
+                   <a href="education.html" target="_blank">EDUCATION</a>
+                   <a href="education.html" target="_blank">EXPERIENCE</a>
+               </div>
+           </li>
+           <li class="dropdown">
+               <a href="#relationships" >RELATIONSHIPS</a>
+               <div class="dropdown-content">
+                   <a href="relationships.html" target="_blank">FAMILY</a>
+                   <a href="relationships.html" target="_blank">FRIENDS</a>
+               </div>
+           </li>
+           <li class="dropdown">
+               <a href="#gallery">GALLERY</a>
+               <div class="dropdown-content">
+               <a href="gallery.html" target="_blank">PHOTOS</a>
+               <a href="gallery.html" target="_blank">VIDEOS</a>
+        </ul>
+      </nav>
+
+
+<section id="photo" class="photos-section">
+    <h1 class="photos-title">PHOTOS</h1>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="photo1.jpg" alt="Description of Photo 1">
+        <div class="caption">Childhood Memories</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="photo2.jpg" alt="Description of Photo 2">
+        <div class="caption">High School Friends</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="photo3.jpg" alt="Description of Photo 3">
+        <div class="caption">Workplace Visit</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="photo4.jpg" alt="Description of Photo 4">
+        <div class="caption">Hari Raya Celebration with Family</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="photo5.jpg" alt="Description of Photo 5">
+        <div class="caption">Memories in Penang</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+</section>
+
+<section id="videos" class="videos-section">
+    <h1 class="videos-title">VIDEOS</h1>
+
+    <div class="video-container">
+
+        
+        <div class="video-item">
+            <video controls width="500">
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="video-caption">This is my high school best friends</p> 
+        </div>
+
+        
+        <div class="video-item">
+            <video controls width="500">
+                <source src="video2.mp4" type="video/mp4"> 
+                Your browser does not support the video tag.
+            </video>
+            <p class="video-caption">This is my university best friends</p> 
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

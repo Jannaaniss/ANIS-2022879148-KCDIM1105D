@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>MY JOURNEY</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href='#' class="logo">IMD318 - INDIVIDUAL PROJECT</a>
+        <ul>
+           <li class="active"><a href="index.html">HOME</a></li>
+           <li class="dropdown">
+               <a href="#about-me">ABOUT ME</a>
+               <div class="dropdown-content">
+                   <a href="biodata.html" target="_blank">BIODATA</a>
+               </div>
+            </li>
+           <li class="dropdown">
+               <a href="#my-journey"> MY JOURNEY</a>
+               <div class="dropdown-content">
+                   <a href="education.html" target="_blank">EDUCATION</a>
+                   <a href="education.html" target="_blank">EXPERIENCE</a>
+               </div>
+           </li>
+           <li class="dropdown">
+               <a href="#relationships" >RELATIONSHIPS</a>
+               <div class="dropdown-content">
+                   <a href="relationships.html" target="_blank">FAMILY</a>
+                   <a href="relationships.html" target="_blank">FRIENDS</a>
+               </div>
+           </li>
+           <li class="dropdown">
+               <a href="#gallery">GALLERY</a>
+               <div class="dropdown-content">
+               <a href="gallery.html" target="_blank">PHOTOS</a>
+               <a href="gallery.html" target="_blank">VIDEOS</a>
+        </ul>
+      </nav>
+
+    <section id="education" class="education-section">
+        <h2 class="education-title">EDUCATION</h2>
+
+    <div class="education-content">
+
+    <div class="school-item">
+        <img src="school1.jpg" alt="" onclick="openFullScreen(this);" />
+        <div class="school-description">
+            <h3 class="title-background">Elementary School</h3>
+            
+            <table class="school-table">
+                <tbody>
+                    <tr><td>TITLE</td><td>DESCRIPTION</td></tr>
+                    <tr><td>Full Name</td><td><a href="https://skkdsk09.blogspot.com/"target="_blank">Sekolah Kebangsaan Kampung Dato Seri Kamaruddin</a></td></tr>
+                    <tr><td>Also Known As</td><td>SK KDSK</td></tr>
+                    <tr><td>School Type</td><td>Government School</td></tr>
+                    <tr><td>Location</td><td>Seri Manjung, Perak</td></tr>
+                    <tr><td>Years Attended</td><td>2012-2016</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="school-item">
+        <img src="school2.jpg" alt="" onclick="openFullScreen(this);" />
+        <div class="school-description">
+            <h3 class="title-background">Secondary School</h3>
+            
+            <table class="school-table">
+                <tbody>
+                    <tr><td>TITLE</td><td>DESCRIPTION</td></tr>
+                    <tr><td>Full Name</td><td><a href="https://smkkdskserimanjung.blogspot.com/p/hem.html"target="_blank">Sekolah Menengah Kebangsaan Kampung Dato Seri Kamaruddin</a></td></tr>
+                    <tr><td>Also Known As</td><td>SMK KDSK</td></tr>
+                    <tr><td>School Type</td><td>Government School</td></tr>
+                    <tr><td>Location</td><td>Seri Manjung, Perak</td></tr>
+                    <tr><td>Years Attended</td><td>2017-2022</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="school-item">
+        <img src="school3.jpg" alt="" onclick="openFullScreen(this);" />
+        <div class="school-description">
+            <h3 class="title-background">University</h3>
+    
+            <table class="school-table">
+                <tbody>
+                    <tr><td>TITLE</td><td>DESCRIPTION</td></tr>
+                    <tr><td>Full Name</td><td><a href="https://kedah.uitm.edu.my" target="_blank">UiTM Kedah Branch, Sungai Petani Campus</a></td></tr>
+                    <tr><td>Also Known As</td><td>UiTM Merbok</td></tr>
+                    <tr><td>School Type</td><td>Public University</td></tr>
+                    <tr><td>Location</td><td>Sungai Petani, Kedah</td></tr>
+                    <tr><td>Years Attended</td><td>2022-2025</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+    <div id="fullScreenOverlay" class="overlay" onclick="closeFullScreen();">
+        <span class="close">&times;</span>
+        <img class="full-screen-image" id="fullScreenImage" src="" alt="" />
+    </div>
+</section>
+
+<section id="experience" class="experience-section">
+    <h2 class="experience-title">EXPERIENCE</h2>
+
+<div class="experience-content">
+
+    <div class="work-item">
+        <div class="work-description">
+            <h3 class="title-background">Part-Time Sales Associate</h3> 
+            <ol>
+                <li>Location: BATA Aeon, Seri Manjung</li>
+                <li>Salary: RM 8 per hour</li>
+                <li>Job Scope:</li>
+            </ol>
+            <ul>
+                <li>Maintained and a clean and organized store environment</li>
+                <li>Processed transactions accurately using point-of-sale (POS) system</li>
+                <li>Provided exceptional customer service to shoppers</li>
+            </ul>
+        </div>
+        <a href="https://aeonmallmy.com/mall/aeon-mall-seri-manjung/store-detail/aeon-mall-seri-manjung-bata-g23"target="_blank">
+        <img src="work1.jpg" alt="Work Experience 1" class="experience-image" /> 
+        </a>
+    </div>
+
+    <div class="work-item">
+        <div class="work-description">
+            <h3 class="title-background">Part-Time Restaurant Associate</h3> 
+            <ol>
+                <li>Location: Sate Opah Restaurant, Seri Manjung</li>
+                <li>Salary: RM 40 per day</li>
+                <li>Job Scope:</li>
+            </ol>
+            <ul><li>Process payments and operate the cash register as a cashier</li>
+                <li>Greet customers and take their order efficiently</li>
+                <li>Ensure cleanliness by washing dishes and maintaining a tidy workplace</li>
+            </ul>
+        </div>
+        <a href="https://www.waze.com/ms/live-map/directions/my/perak/lumut/sate-opah-(-seri-manjung,-perak-)?to=place.ChIJt7DskcktyzERBDuN3FLgSJc"target="_blank">
+        <img src="work2.jpg." alt="Work Experience 2" class="experience-image" /> 
+        </a>
+    </div>
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

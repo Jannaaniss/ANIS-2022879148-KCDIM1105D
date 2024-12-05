@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>RELATIONSHIPS</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href='#' class="logo">IMD318 - INDIVIDUAL PROJECT</a>
+        <ul>
+           <li class="active"><a href="index.html">HOME</a></li>
+           <li class="dropdown">
+               <a href="#about-me">ABOUT ME</a>
+               <div class="dropdown-content">
+                   <a href="biodata.html" target="_blank">BIODATA</a>
+               </div>
+            </li>
+           <li class="dropdown">
+               <a href="#my-journey"> MY JOURNEY</a>
+               <div class="dropdown-content">
+                   <a href="education.html" target="_blank">EDUCATION</a>
+                   <a href="education.html" target="_blank">EXPERIENCE</a>
+               </div>
+           </li>
+           <li class="dropdown">
+               <a href="#relationships" >RELATIONSHIPS</a>
+               <div class="dropdown-content">
+                   <a href="relationships.html" target="_blank">FAMILY</a>
+                   <a href="relationships.html" target="_blank">FRIENDS</a>
+               </div>
+           </li>
+           <li class="dropdown">
+               <a href="#gallery">GALLERY</a>
+               <div class="dropdown-content">
+               <a href="gallery.html" target="_blank">PHOTOS</a>
+               <a href="gallery.html" target="_blank">VIDEOS</a>
+        </ul>
+      </nav>
+      <section id="family" class="family-section">
+        <h1 class="family-title">FAMILY</h1>
+      
+        <div class="family-content">
+
+        <h1 class="pictures-title">My Family Members</h1>
+
+        <table class="family-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Being Called As</th>
+                    <th>Age</th>
+                    <th>D.O.B</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Norhisham bin Nordin</td>
+                    <td>Ayah</td>
+                    <td>55</td>
+                    <td>1/1/1969</td>
+                    <td>Businessman</td>
+                </tr>
+
+                <tr>
+                    <td>Hafisah binti Mohd Aalib</td>
+                    <td>Ibu</td>
+                    <td>52</td>
+                    <td>22/6/1972</td>
+                    <td>Teacher</td>
+                </tr>
+                <tr>
+                    <td>Nur Jannatun Hanim binti Norhisham</td>
+                    <td>Kak long</td>
+                    <td>22</td>
+                    <td>7/4/2002</td>
+                    <td>Tailor</td>
+                </tr>
+                <tr>
+                    <td>Nur Jannatun Aina binti Norhisham</td>
+                    <td>Kak Ngah</td>
+                    <td>21</td>
+                    <td>29/8/2003</td>
+                    <td>Army</td>
+                </tr>
+                <tr>
+                    <td>Nur Jannatun Anis binti Norhisham</td>
+                    <td>Kak Cik</td>
+                    <td>20</td>
+                    <td>26/11/2004</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>Muhammad Iqmal bin Norhisham</td>
+                    <td>Abang</td>
+                    <td>15</td>
+                    <td>23/3/2009</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>Nur Jannatun Iman binti Norhisham</td>
+                    <td>Adik</td>
+                    <td>9</td>
+                    <td>8/11/2015</td>
+                    <td>Student</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="family-pictures">
+
+            <h2 class="pictures-title"> My Family Pictures</h2>
+
+            <div class="picture-cointainer">
+
+            <div class="picture">
+                <img src="family1.jpg" alt="Family 1" onclick="openFullScreen(this);"/>
+            </div>
+
+            <div class="picture">
+                <img src="family2.jpg" alt="Family 2" onclick="openFullScreen(this);"/>
+            </div>
+        </div>
+
+            <div id="fullScreenOverlay" class="overlay" onclick="closeFullScreen();">
+                <span class="close">&times;</span>
+                <img class="full-screen-image" id="fullScreenImage" src="" alt="" />
+            </div>
+        </div>
+    </section>
+    
+    <section id="friends" class="friends-section">
+        <h2 class="friends-title">FRIENDS</h2>
+
+        <div class="friends-content">
+            <div class="slider">
+                <div class="slides">
+                    <img src="friend1.jpg" alt="Friend 1" class="slide active"/>
+                    <img src="friend2.jpg" alt="Friend 2" class="slide"/>
+                    <img src="friend3.jpg" alt="Friend 3" class="slide"/>
+                    <img src="friend4.jpg" alt="Friend 4" class="slide"/>
+                    <img src="friend5.jpg" alt="Friend 5" class="slide"/>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="friends-introduction">
+                <h3>My University Friends</h3>
+                <p> When I first met them, I expected to find a diverse group of individuals with unique personalities. I was eager to make connections that would last beyond our time at university. Over the years, we have shared countless memories, from late-night study sessions to fun outings and adventures. Our friendship has grown through mutual support and shared experiences, making my university life truly unforgettable.</p>
+            </div>
+
+            <div class="friends-boxes">
+                <div class="friend-box-cointainer">
+                    <h4 class="friend-name">Qhairina</h4>
+                    <div class="friend-box">
+                    <p>The first person I approached was Nina, who introduced herself as Qhai. At that time, I was so happy to be able to make new friends with her, as she seemed like a friendly person. And yes, my prediction was true, she's very talkative that we don't even can stop her. Now, she's the official clown of the group, as she always makes us laugh with her random jokes and entertains us with her unlimited stories.</p>
+                </div>
+            </div>
+
+                <div class="friend-box-cointainer">
+                    <h4 class="friend-name">Hanim</h4>
+                    <div class="friend-box">
+                    <p>Hanim, when I first saw her, I literally felt a bit offended as she gave off that kind of vibe: "Leave me alone!" I really didn't dare to approach her at first. But it turns out she's the most soft-hearted and very sensitive, she also always cares about others, especially when it comes to food. That's why we call her Mommy, because she's the mom of our group. She's always been our unpaid MUA because her makeup skills were much better than us.</p>
+                </div>
+            </div>
+
+                <div class="friend-box-cointainer">
+                    <h4 class="friend-name">Aqilah</h4>
+                    <div class="friend-box">
+                    <p>Qilah, the first time I saw her, I thought, "Oh, this one looks like an introvert and seems very diligent," as at that time she still tidied up her things while others fell asleep. And it turns out, I was right! She's very diligent, and everyone can't deny that. She woke up early in the morning and went to sleep at 10 p.m. every day. Literally top student material.</p>
+                </div>
+            </div>
+            
+                <div class="friend-box-cointainer">
+                    <h4 class="friend-name">Natrah</h4>
+                    <div class="friend-box">
+                    <p>Last but not least, Natrah. Our unexpected friendship started when she asked me to accompany her anywhere, and my answer was always yes! LET'S GO! We're very talented with last-minute plans. Natrah is also our unofficial roommate, and we always welcome her to our room because we share money to buy food. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
+
+
